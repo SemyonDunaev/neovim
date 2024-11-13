@@ -6,4 +6,4 @@ local opts = { noremap = true, silent = true }
 
 -- -- General
 -- ESC
-vim.keymap.set("i", "jk", "<Esc>", opts)
+vim.keymap.set("i", "jk", "<Esc>l", opts)
