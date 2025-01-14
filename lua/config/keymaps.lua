@@ -3,7 +3,13 @@
 -- Add any additional keymaps here
 
 local opts = { noremap = true, silent = true }
+local wk = require("which-key")
 
 -- -- General
 -- ESC
 vim.keymap.set("i", "jk", "<Esc>l", opts)
+
+-- Which-key
+wk.add({
+  { "<leader>t", group = "Todos", icon = "" },
+})
