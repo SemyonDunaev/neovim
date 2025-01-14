@@ -3,13 +3,14 @@ if vim.g.neovide then
   vim.g.neovide_hide_mouse_when_typing = true
   vim.g.neovide_theme = "auto"
   -- vim.g.neovide_transparency = 0.96
-  vim.o.guifont = "JetBrains Mono:h15"
+  vim.o.guifont = "JetBrainsMono Nerd Font:h15"
   vim.g.neovide_refresh_rate = 100
   vim.g.neovide_cursor_animation_length = 0.01
   vim.g.neovide_scroll_animation_length = 0.1
   vim.g.neovide_scroll_animation_far_lines = 0
 end
 
+-- LazyVim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -30,10 +31,6 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    { import = "lazyvim.plugins.extras.util.project" },
-    { import = "lazyvim.plugins.extras.ai.codeium" },
-    { import = "lazyvim.plugins.extras.lang.python" },
-    { import = "lazyvim.plugins.extras.lang.markdown" },
     -- import/override with your plugins
     { import = "plugins" },
   },
