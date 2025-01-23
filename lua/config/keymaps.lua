@@ -12,4 +12,5 @@ vim.keymap.set("i", "jk", "<Esc>l", opts)
 -- Which-key
 wk.add({
   { "<leader>t", group = "Todos", icon = "" },
+  { "<leader>a", group = "Ai", icon = "" },
 })
