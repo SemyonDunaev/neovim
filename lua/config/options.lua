@@ -4,6 +4,7 @@
 
 local o = vim.o
 
-o.visualbell = false
 o.clipboard = "unnamedplus"
+o.spelllang = "en,ru"
+o.visualbell = false
 o.wrap = true
